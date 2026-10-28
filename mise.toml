@@ -1,0 +1,4 @@
+[tools]
+java = "temurin-25.0.5+8.0.LTS"
+maven = "3.10.0"
+just = "1.59.0"
