@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-xml
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.24.0
+    hooks:
+      - id: markdownlint-cli2
+  - repo: local
+    hooks:
+      - id: ktlint
+        name: ktlint
+        entry: ktlint
+        language: system
+        files: \.kts?$
+      - id: just-fmt
+        name: just --fmt --check
+        entry: just --fmt --check --unstable
+        language: system
+        files: ^justfile$
+        pass_filenames: false

@@ -1,4 +1,4 @@
-# Hello, Kotlin!
+# Hello, Kotlin
 
 ## Setup your development environment
 
@@ -11,6 +11,7 @@ mise install
 ```
 
 We use pre-commit for automated linting and formatting:
+
 ```sh
 pre-commit install
 ```
